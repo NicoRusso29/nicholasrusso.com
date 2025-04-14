@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nicholas Russo III</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Dark mode preference
+    if (
+      localStorage.theme === 'dark' ||
+      (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)
+    ) {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-sans">
+
+  <header class="bg-blue-600 text-white py-10 text-center">
+    <h1 class="text-4xl font-bold">Nicholas Russo III</h1>
+    <p class="text-lg mt-2">Head Advisor @ INDEX GURUS</p>
+    <p class="text-sm">Based in Toronto, ON</p>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-10">
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Professional Summary</h2>
+      <p class="mb-4">
+        Nicholas Russo III is a seasoned financial professional based in Toronto, Ontario, with over 20 years of experience in capital markets,
+        real estate, and strategic advisory. He currently serves as <strong>Head Advisor at INDEX GURUS</strong>, providing high-level guidance
+        on investment strategy, market positioning, and complex real estate transactions.
+      </p>
+      <p>
+        Previously, Nicholas spent 17 years at <strong>JPMorgan Chase & Co.</strong> as <strong>Executive Director</strong>, leading initiatives
+        across investment banking, capital markets, and structured finance. He holds a B.A. in Business Economics from <strong>Brown University</strong>.
+      </p>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Experience</h2>
+      <ul class="list-disc list-inside">
+        <li><strong>2020 – Present:</strong> Head Advisor @ INDEX GURUS</li>
+        <li><strong>2003 – 2020:</strong> Executive Director @ JPMorgan Chase & Co.</li>
+      </ul>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Education</h2>
+      <ul class="list-disc list-inside">
+        <li><strong>Brown University</strong> — B.A. in Business Economics & Public/Private Organizations (1999 – 2003)</li>
+        <li><strong>Cape Cod Academy</strong></li>
+      </ul>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Skills</h2>
+      <div class="flex flex-wrap gap-2">
+        <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full text-sm">Capital Markets</span>
+        <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full text-sm">Real Estate</span>
+        <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full text-sm">Real Estate Transactions</span>
+        <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full text-sm">M&A Analysis</span>
+        <span class="bg-gray-200 dark:bg-gray-700 text-gray-800 dark:text-gray-100 px-3 py-1 rounded-full text-sm">Corporate Finance</span>
+      </div>
+    </section>
+
+    <section class="mb-12">
+      <h2 class="text-2xl font-semibold border-b border-gray-300 dark:border-gray-700 pb-2 mb-4">Contact</h2>
+      <form action="https://formspree.io/f/xdoqprkk" method="POST" class="grid gap-4">
+        <input type="text" name="name" placeholder="Your Name" required class="p-3 border rounded-md dark:bg-gray-800 dark:border-gray-600" />
+        <input type="email" name="email" placeholder="Your Email" required class="p-3 border rounded-md dark:bg-gray-800 dark:border-gray-600" />
+        <textarea name="message" rows="5" placeholder="Your Message" required class="p-3 border rounded-md dark:bg-gray-800 dark:border-gray-600"></textarea>
+        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="text-center text-sm py-8 text-gray-500 dark:text-gray-400">
+    &copy; 2025 Nicholas Russo III — Built with ❤️ and GitHub Pages
+  </footer>
+</body>
+</html>
